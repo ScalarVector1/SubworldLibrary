@@ -1001,7 +1001,7 @@ namespace SubworldLibrary
 						SubworldSystem.Exit();
 						return true;
 					case "Current":
-						return SubworldSystem.Current.FullName;
+						return SubworldSystem.Current?.FullName;
 					case "IsActive":
 						return SubworldSystem.IsActive(args[1] as string);
 					case "AnyActive":
@@ -1143,4 +1143,5 @@ namespace SubworldLibrary
 			return false;
 		}
 	}
+
 }
